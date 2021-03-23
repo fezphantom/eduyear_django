@@ -161,12 +161,15 @@ MESSAGE_TAGS = {
 
 SITE_ID = 1
 
-# white noise static settings
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'aisociety.in@gmail.com'
 EMAIL_HOST_PASSWPRD = ''
 EMAIL_USE_TLS = True
+
+
+# white noise static settings
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
