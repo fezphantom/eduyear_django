@@ -3,6 +3,13 @@
 <html>
 
 <head>
+  <script>
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove();
+            });
+        }, 3000);
+      </script>
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
@@ -45,6 +52,8 @@
 
 {% include 'includes/navbar.html' %}
 
+
+
 {% block content %}
 
 
@@ -53,8 +62,8 @@
 
 <div id="full-page-search">
     <button type="button" class="close">×</button>
-    <form action="https://storage.googleapis.com/theme-vessel/carhouse/index.html#" class="search-header">
-        <input type="search" value="" placeholder="type keyword(s) here" />
+    <form action="{%url 'search' %}" class="search-header">
+        <input type="search" value="" placeholder="type keyword(s) here" name ="keyword"/>
         <button type="submit" class="btn btn-sm button-theme">Search</button>
     </form>
 </div>
