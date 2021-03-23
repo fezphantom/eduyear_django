@@ -26,7 +26,7 @@ SECRET_KEY = '7#g#rolukt--m$f52^5282_ss7ei@m@i%9wuzhnmk%aau1_rvz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://tranquil-brook-65035.herokuapp.com']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 
